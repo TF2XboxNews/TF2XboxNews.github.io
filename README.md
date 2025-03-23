@@ -1,133 +1,164 @@
----
-title: border-top-color
-slug: Web/CSS/border-top-color
-page-type: css-property
-browser-compat: css.properties.border-top-color
----
 
-{{CSSRef}}
-
-The **`border-top-color`** [CSS](/en-US/docs/Web/CSS) property sets the color of an element's top [border](/en-US/docs/Web/CSS/border). It can also be set with the shorthand CSS properties {{cssxref("border-color")}} or {{cssxref("border-top")}}.
-
-{{InteractiveExample("CSS Demo: border-top-color")}}
-
-```css interactive-example-choice
-border-top-color: red;
-```
-
-```css interactive-example-choice
-border-top-color: #32a1ce;
-```
-
-```css interactive-example-choice
-border-top-color: rgb(170, 50, 220, 0.6);
-```
-
-```css interactive-example-choice
-border-top-color: hsl(60, 90%, 50%, 0.8);
-```
-
-```css interactive-example-choice
-border-top-color: transparent;
-```
-
-```html interactive-example
-<section class="default-example" id="default-example">
-  <div class="transition-all" id="example-element">
-    This is a box with a border around it.
-  </div>
-</section>
-```
-
-```css interactive-example
-#example-element {
-  background-color: #eee;
-  color: #000;
-  border: 0.75em solid;
-  padding: 0.75em;
-  width: 80%;
-  height: 100px;
-}
-```
-
-## Syntax
-
-```css
-/* <color> values */
-border-top-color: red;
-border-top-color: #ffbb00;
-border-top-color: rgb(255 0 0);
-border-top-color: hsl(100deg 50% 25% / 75%);
-border-top-color: currentcolor;
-border-top-color: transparent;
-
-/* Global values */
-border-top-color: inherit;
-border-top-color: initial;
-border-top-color: revert;
-border-top-color: revert-layer;
-border-top-color: unset;
-```
-
-The `border-top-color` property is specified as a single value.
-
-### Values
-
-- {{cssxref("&lt;color&gt;")}}
-  - : The color of the top border.
-
-## Formal definition
-
-{{CSSInfo}}
-
-## Formal syntax
-
-{{csssyntax}}
-
-## Examples
-
-### A div with a border
-
-#### HTML
-
-```html
-<div class="my-box">
-  <p>
-    This is a box with a border around it. Note which side of the box is
-    <span class="red-text">red</span>.
-  </p>
-</div>
-```
-
-#### CSS
-
-```css
-.my-box {
-  border: solid 0.3em gold;
-  border-top-color: red;
-  width: auto;
+#navBarBGRepeat {
+	width:100%;
+	height:58px;
+	position:relative;
+	background-color: #110F0F;
 }
 
-.red-text {
-  color: red;
+#navBarShadow {
+	position:absolute;
+	width:100%;
+	height: 12px;
+	top: 58px;
+	background-image:url('https://steamcdn-a.akamaihd.net/apps/tf2/images/header/navshadow.png');
+	z-index: 100;
 }
-```
 
-#### Result
+#navBarBG {
+	width:100%;
+	height:66px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-image:url('https://steamcdn-a.akamaihd.net/apps/tfstore/images/header/nav_bar.png');
+	text-align:center;
+}
 
-{{EmbedLiveSample('A_div_with_a_border')}}
+#navBar {
+	width: 938px;
+	height: 69px;
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+}
 
-## Specifications
+#navBar:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
 
-{{Specifications}}
+#navBar .navBarItem {
+	position: relative;
+	display: inline-block;
+	margin: -6px 17px 0 -11px;
+	vertical-align: middle;
+	padding-top: 0;
+}
 
-## Browser compatibility
+#navBar .bg {
+	background-color: #bc5616;
+	border-radius: 5px;
+}
 
-{{Compat}}
+#navBar a.navBarItem img.top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
 
-## See also
+#navBar a.navBarItem:hover img.top {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transition: opacity .15s ease-in-out;
+	-moz-transition: opacity .15s ease-in-out;
+	-o-transition: opacity .15s ease-in-out;
+	transition: opacity .15s ease-in-out;
+	padding-top: 0;
+}
 
-- The border-related CSS shorthand properties: {{cssxref("border")}}, {{cssxref("border-top")}}, and {{cssxref("border-color")}}.
-- The color-related CSS properties for the other borders: {{cssxref("border-right-color")}}, {{cssxref("border-bottom-color")}}, and {{cssxref("border-left-color")}}.
-- The other border-related CSS properties applying to the same border: {{cssxref("border-top-style")}} and {{cssxref("border-top-width")}}.
-- The default [`currentcolor`](/en-US/docs/Web/CSS/color_value#currentcolor_keyword) color value.
+.externalLinkIcon {
+	display: inline-block;
+	background-image: url('https://steamcdn-a.akamaihd.net/apps/tfstore/images/header/external_header_icon.png');
+	background-repeat: no-repeat;
+	min-width: 8px;
+	min-height: 8px;
+	margin: 0 0 0 3px;
+	padding: 0;
+}
+
+a.navBarItem:link, a.navBarItem:active, a.navBarItem:visited {
+	text-decoration:none;
+	color: #969AA1;
+}
+
+a.navBarItem:hover {
+	color: #ffffff;
+}
+
+#navLoginAndLanguage {
+	position:absolute;
+	width:938px;
+	text-align:right;
+	top:3px;
+	padding-right:10px;
+	font-size:11px;
+}
+
+#navLoginAndLanguage a, #navLoginAndLanguage a:hover, #navLoginAndLanguage a:visited, #navLoginAndLanguage a:active {
+	color:#cdc1a9;
+	text-decoration:none;
+	font-size:11px;
+}
+
+#navLoginAndLanguage a:hover {
+	color:#ffffff;
+}
+
+#languageSelector {
+	float:right;
+}
+
+#languageList {
+	padding:3px 2px;
+	border:solid #777777 1px;
+	background-color:#333333;
+	text-align:left;
+	z-index:999999;
+	position:absolute;
+	right:10px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+#languageList a {
+	display:block;
+	padding:3px 6px;
+}
+
+#languageList a:hover {
+	background-color:#555555;
+}
+
+#adminSelector {
+	float:right;
+}
+
+#adminList {
+	padding:3px 2px;
+	border:solid #777777 1px;
+	background-color:#333333;
+	text-align:left;
+	z-index:100;
+	position:absolute;
+	right:20px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+#adminList a {
+	display:block;
+	padding:3px 6px;
+}
+
+#adminList a:hover {
+	background-color:#555555;
+}
+
