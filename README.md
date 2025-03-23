@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TF2-Style Template</title>
+    <title>TF2 Xbox News</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -50,18 +49,18 @@
 </head>
 <body>
     <header>
-        <h1>Team Fortress Style</h1>
+        <h1>TF2 Xbox News</h1>
         <nav>
             <a href="#">Home</a>
             <a href="#">Media</a>
             <a href="#">Community</a>
-            <a href="#">Updates</a>
+            <a href="#">Modder Updates</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h2>Welcome to the TF2-Style Template</h2>
-        <p>A fully customizable template for a TF2-themed website</p>
+        <h2>Welcome to the TF2 Xbox News</h2>
+        <p>Stay up to date with the TF2 Xbox Community/Mods/and Discord</p>
     </section>
 
     <section class="content">
@@ -77,7 +76,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 TF2-Style Community</p>
+        <p>&copy; 2025 TF2 Xbox News is a fan website not affiliated with ValVe</p>
     </footer>
 </body>
 </html>
