@@ -66,13 +66,13 @@
     <section class="content">
         <h3>Featured Section</h3>
         <div class="image-placeholder">Image Placeholder</div>
-        <p>Description or news content goes here.</p>
+        <p>Join the TF2 Xbox Official Discord!</p>
     </section>
 
     <section class="content">
-        <h3>Another Section</h3>
+        <h3>Newest Modder Development</h3>
         <div class="image-placeholder">Image Placeholder</div>
-        <p>More text content and information can be placed here.</p>
+        <p>Updates from the Cosmos team and other modders in the community.</p>
     </section>
 
     <footer>
