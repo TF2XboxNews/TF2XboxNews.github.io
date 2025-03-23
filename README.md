@@ -6,12 +6,12 @@
     <title>TF2 Themed Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bigshot+One&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #3e2a19; /* TF2 Official Website Background Color */
             color: #fff;
-            font-family: 'Alfa Slab One', cursive;
+            font-family: 'Bigshot One', cursive;
             text-align: center;
         }
         nav ul {
@@ -43,6 +43,7 @@
 </head>
 <body>
     <header>
+        <h1 style="font-family: 'Bigshot One', cursive; color: #f0a030;">TF2 Fan Site</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
